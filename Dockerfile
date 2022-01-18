@@ -1,5 +1,5 @@
 FROM centos:7
-LABEL maintainer="Jeff Geerling"
+LABEL maintainer="Yuri Tsuprun"
 ENV container=docker
 
 ENV pip_packages "ansible"
