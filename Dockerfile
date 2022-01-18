@@ -34,7 +34,7 @@ RUN yum makecache fast \
 RUN pip3 install --upgrade pip
 
 # Install Ansible via Pip.
-RUN pip3 install $pip_packages
+RUN LC_CTYPE=en_US.UTF-8 pip3 install $pip_packages
 
 # Disable requiretty.
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
